@@ -4,20 +4,50 @@ import java.util.Scanner;
 
 public class App {
 
+    Scanner scanner = new Scanner(System.in);
+
     //todo Task 1
-    public void largestNumber(){
+    public void largestNumber() {
         // input your solution here
+        int number = scanner.nextInt();
+        while(number > 0){
+            scanner.nextInt();
+        }
+        System.out.print("The largest number is " + number);
+
     }
 
+
     //todo Task 2
-    public void stairs(){
+    public void stairs() {
         // input your solution here
+        final int ROWS = 4;
+        int number = 1;
+
+        System.out.println("n: " + number);
+        for (int row = 0; row < ROWS; row++) {
+            for (int col = 0; col < ROWS - row; col++) {
+                System.out.print(number++ + " ");
+            }
+            System.out.println();
+        }
     }
 
     //todo Task 3
     public void printPyramid(){
         // input your solution here
+            final int ROWS = 6;
+        for (int row = 1; row <= ROWS; row++){
+            for (int col = ROWS; col > row; col--) {
+                System.out.print(" ");
+            }
+            for (int col = 0; col < row*2-1; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
+
 
     //todo Task 4
     public void printRhombus(){
@@ -27,6 +57,11 @@ public class App {
     //todo Task 5
     public void marks(){
         // input your solution here
+        int sum = 0;
+        double average;
+        int count = 0;
+        int input;
+        Scanner scan = new Scanner(System.in);
     }
 
     //todo Task 6
